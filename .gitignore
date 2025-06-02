@@ -1,1 +1,19 @@
 .env
+credentials.json
+*.zip
+.DS_Store
+
+__pycache__/
+*.py[cod]
+*.log
+
+# Ignore tout dans lambda_deploy
+lambda_deploy/*
+
+# sauf
+!lambda_deploy/sheets_connector/
+!lambda_deploy/hubspot_connector/
+!lambda_deploy/utils/
+!lambda_deploy/lambda_function.py
+!lambda_deploy/main.py
+!lambda_deploy/requirements.txt

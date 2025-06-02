@@ -1,8 +1,17 @@
-# HubSpot → CSV Connector
+🔗 HubSpot → Google Sheets Sync (AWS Lambda)
 
-Mini-projet Python qui récupère des contacts via l'API HubSpot et les exporte dans un fichier CSV.
+Ce projet est un connecteur serverless qui synchronise automatiquement les contacts HubSpot dans un fichier Google Sheets, avec une mise à jour quotidienne grâce à AWS Lambda et EventBridge.
 
-## Objectifs :
-- Consommer l’API HubSpot
-- Traiter et filtrer des données
-- Générer un export CSV simple
+🚀 Fonctionnalités
+	•	🔄 Récupération des contacts via l’API HubSpot
+	•	📤 Export automatique vers un fichier Google Sheets (via GSpread + API Google)
+	•	🗓️ Cronjob quotidien grâce à AWS Lambda + EventBridge
+	•	📁 Export CSV local disponible (option)
+
+🛠️ Stack utilisée
+	•	Python 3.11
+	•	hubspot-api-client
+	•	gspread, oauth2client
+	•	AWS Lambda
+	•	EventBridge (pour le déclenchement planifié)
+	•	Hébergement serverless

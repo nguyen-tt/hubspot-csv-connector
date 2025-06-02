@@ -1,0 +1,4 @@
+hubspot-api-client
+python-dotenv
+oauth2client
+gspread
